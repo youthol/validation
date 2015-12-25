@@ -448,7 +448,8 @@ class valite
         );
     }
 }
-
+    for($p=1;$p<11;$p++)
+{
     $img="images/pic".$p.".jpeg";//验证码地址
     $v=new valite();
     // $val=file_get_contents($img);
@@ -457,5 +458,5 @@ class valite
     $v->getHec();
     $res= $v->run();//结果/*这个验证码的识别率在95%以上，如果对于有字母的需要为其扩充特征串类，对于有复杂变化的还需要进行其他处理*/
     echo $res."<br>";
-    
+}  
 ?>
